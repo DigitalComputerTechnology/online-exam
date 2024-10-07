@@ -1,0 +1,211 @@
+body{
+    background-image: url("../img/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#mainbody2{
+    margin-top: 10%;
+}
+/* From Uiverse.io by Smit-Prajapati */ 
+.loader2 {
+    width: 250px;
+    --duration: 2s;
+    --logo-color: grey;
+    --background: linear-gradient(
+      0deg,
+      rgba(50, 50, 50, 0.2) 0%,
+      rgba(100, 100, 100, 0.2) 100%
+    );
+    height: 250px;
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-block;
+    top: 17%;
+  }
+  
+  .loader2 .box2 {
+    position: absolute;
+    background: rgba(0, 249, 203, 0.2);
+    background: rgba(0, 249, 203, 0.2);
+    border-radius: 50%;
+    border-top: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+    backdrop-filter: blur(5px);
+    animation: ripple var(--duration) infinite ease-in-out;
+  }
+  
+  .loader2 .box2:nth-child(1) {
+    inset: 40%;
+    z-index: 99;
+  }
+  
+  .loader2 .box2:nth-child(2) {
+    inset: 30%;
+    z-index: 98;
+    border-color: rgba(100, 100, 100, 0.8);
+    animation-delay: 0.2s;
+  }
+  
+  .loader2 .box2:nth-child(3) {
+    inset: 20%;
+    z-index: 97;
+    border-color: rgba(100, 100, 100, 0.6);
+    animation-delay: 0.4s;
+  }
+  
+  .loader2 .box2:nth-child(4) {
+    inset: 10%;
+    z-index: 96;
+    border-color: rgba(100, 100, 100, 0.4);
+    animation-delay: 0.6s;
+  }
+  
+  .loader2 .box2:nth-child(5) {
+    inset: 0%;
+    z-index: 95;
+    border-color: rgba(100, 100, 100, 0.2);
+    animation-delay: 0.8s;
+  }
+  
+  .loader2 .logo2 {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    padding: 30%;
+  }
+  
+  .loader2 .logo2 svg {
+    fill: var(--logo-color);
+    width: 100%;
+    animation: color-change var(--duration) infinite ease-in-out;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+    }
+    50% {
+      transform: scale(1.3);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px -0px;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+    }
+  }
+  
+  @keyframes color-change {
+    0% {
+      fill: var(--logo-color);
+    }
+    50% {
+      fill: white;
+    }
+    100% {
+      fill: var(--logo-color);
+    }
+  }
+  
+
+  /* special-button1 Start */
+      /* From Uiverse.io by kamehame-ha */ 
+.light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
+    border-radius: 5px;
+    color: #0f0f0f;
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+  }
+  
+  .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f;
+    transition: 300ms;
+  }
+  
+  .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  
+  .light-button button.bt:hover .button-holder svg {
+    fill: rgba(88, 101, 242, 1);
+  }
+  
+  .light-button button.bt:hover .button-holder {
+      color: rgba(88, 101, 242, 1);
+      outline: rgb(0 249 203) 2px solid;
+      outline-offset: 2px;
+      background-color: rgb(0 249 203);
+    }
+    .button-holder b {
+        display: none;
+        margin-top: 10px;
+    }
+    .light-button button.bt:hover .button-holder b {
+        display: block;
+        color: black;
+        font-size: 22px;
+    }
+    .light-button button.bt:hover .button-holder p {
+        display: none;
+    }
+  
+  .light-button button.bt:hover .light-holder .light {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgb(0 249 203) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+        }
+  
+  
+  /* special-button1 End */
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    .light-button button.bt .light-holder .light{
+      width: 125px !important;
+    }
+  }
